@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AngularJS: Getting started"
-description: For the past two years I've been working on web applications primarily developed using the javascript framework AngularJS. These are the best resources I've found in the web to learn about this awesome technology.
+description: These are the best resources I've found in the web to learn about this awesome technology.
 permalink: /angular-form-validation
 ---
 
