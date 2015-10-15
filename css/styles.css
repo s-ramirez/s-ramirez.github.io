@@ -3,7 +3,11 @@
     height: 150px
 }
 
+.card.small .card-action {
+    padding: 10px 20px;
+}
+
 .card .card-image .card-title {
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 20px;
 }
