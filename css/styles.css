@@ -1,4 +1,4 @@
-// Cards
+/* Cards */
 .card .card-image img {
     height: 150px
 }
@@ -12,12 +12,18 @@
     padding: 10px 20px;
 }
 
-//Cover image
+/* User image */
+.user-image {
+    border-radius: 100%;
+    width: 160px;
+}
+
+/* Cover image */
 .parallax img {
     width: 100%;
 }
 
-// Footer
+/* Footer */
 footer.page-footer {
     margin-top: 0;
 }
