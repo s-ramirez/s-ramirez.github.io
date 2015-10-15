@@ -17,9 +17,8 @@ paginate: 9
 paginate_path: "/page:num/"
 
 # Social
-twitter_username: jekyllrb
-github_username:  jekyllrb
-linkedin_username: jekyllrb
+twitter_username: s_ramirez91
+github_username:  s-ramirez
 
 # Build settings
 markdown: kramdown
