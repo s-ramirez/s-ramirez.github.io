@@ -17,14 +17,14 @@
 -->
 {% include head.html %}
 <!-- Always shows a header, even in smaller screens. -->
-<body class="mdl-layout mdl-js-layout">
+<body>
     {% include header.html %}
-    <main class="mdl-layout__content">
-        <div class="header-image mdl-typography--text-center"></div>
-        </section>
+    <div class="parallax-container">
+        <div class="parallax"><img src="http://substantial.com/assets/images/blog/2015/05/materialdesign_blog.png"></div>
+    </div>
+    <main class="section white">
         {{ content }}
-        <div class="mdl-layout-spacer"></div>
-        {% include footer.html %}
+        <!-- {% include footer.html %} -->
     </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
     <script src="{{ site.baseurl | prepend: site.url }}/js/materialize.min.js"></script>
