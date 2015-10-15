@@ -2,57 +2,62 @@
 layout: default
 ---
 
-<!-- orginal style from http://www.getmdl.io/templates/text-only/index.html -->
-<div class="row">
-  {% for post in paginator.posts %}
-  <div class="col s12 m4">
-      <div class="card small">
-          <div class="card-image">
-              <img src="{{ post.image }}">
-              <span class="card-title">{{ post.title}}</span>
-          </div>
-          <div class="card-content">
-              <p>{{ post.description }}</p>
-          </div>
-          <div class="card-action">
-              <a href="{{ post.url }}">Read more</a>
+<!-- Post cards -->
+<div class="section grey lighten-3">
+    <div class="row">
+      {% for post in paginator.posts %}
+      <div class="col s12 m4">
+          <div class="card small">
+              <div class="card-image">
+                  <img src="{{ post.image }}">
+                  <span class="card-title">{{ post.title}}</span>
+              </div>
+              <div class="card-content">
+                  <p>{{ post.description }}</p>
+              </div>
+              <div class="card-action">
+                  <a href="{{ post.url }}">Read more</a>
+              </div>
           </div>
       </div>
-  </div>
-  {% endfor %}
+      {% endfor %}
+    </div>
 </div>
-<div class="row">
-    <div class="col s12 center">
-        <ul class="pagination">
-            {% if paginator.previous_page %}
-            <li class="waves-effect">
-                <a href="{{ paginator.previous_page_path }}">
-                    <i class="material-icons">chevron_left</i>
-                </a>
-            </li>
-            {% else %}
-            <li class="disabled">
-                <a href="">
-                    <i class="material-icons">chevron_left</i>
-                </a>
-            </li>
-            {% endif %}
+<!-- Pagination -->
+<div class="section white">
+    <div class="row">
+        <div class="col s12 center">
+            <ul class="pagination">
+                {% if paginator.previous_page %}
+                <li class="waves-effect">
+                    <a href="{{ paginator.previous_page_path }}">
+                        <i class="material-icons">chevron_left</i>
+                    </a>
+                </li>
+                {% else %}
+                <li class="disabled">
+                    <a href="">
+                        <i class="material-icons">chevron_left</i>
+                    </a>
+                </li>
+                {% endif %}
 
-            {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <li class="active"><a href="">{{ page }}</a></li>
-            {% elsif page == 1 %}
-            <li class="waves-effect"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-            {% else %}
-            <li class="waves-effect"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-            {% endif %}
-            {% endfor %}
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li class="active"><a href="">{{ page }}</a></li>
+                {% elsif page == 1 %}
+                <li class="waves-effect"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+                {% else %}
+                <li class="waves-effect"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                {% endif %}
+                {% endfor %}
 
-            {% if paginator.next_page %}
-                <li class="waves-effect"><a href="{{ paginator.next_page_path }}"><i class="material-icons">chevron_right</i></a></li>
-            {% else %}
-                <li class="disabled"><a href=""><i class="material-icons">chevron_right</i></a></li>
-            {% endif %}
-        </ul>
+                {% if paginator.next_page %}
+                    <li class="waves-effect"><a href="{{ paginator.next_page_path }}"><i class="material-icons">chevron_right</i></a></li>
+                {% else %}
+                    <li class="disabled"><a href=""><i class="material-icons">chevron_right</i></a></li>
+                {% endif %}
+            </ul>
+        </div>
     </div>
 </div>
