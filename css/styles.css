@@ -11,7 +11,13 @@
     font-size: 20px;
     padding: 10px 20px;
 }
+
 //Cover image
 .parallax img {
     width: 100%;
+}
+
+// Footer
+footer.page-footer {
+    margin-top: 0;
 }
