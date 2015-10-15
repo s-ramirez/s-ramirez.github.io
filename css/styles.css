@@ -1,0 +1,9 @@
+// Cards
+.card .card-image img {
+    height: 150px
+}
+
+.card .card-image .card-title {
+    font-size: 20px;
+    padding: 10px;
+}

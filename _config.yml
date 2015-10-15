@@ -12,6 +12,10 @@ url: "http://sramirez.me" # the base hostname & protocol for your site
 about_author: >
   Bacon ipsum dolor amet meatball cupim tenderloin frankfurter ham hock pork loin chuck kevin ham shankle capicola. Chuck prosciutto venison drumstick cow fatback picanha pig swine corned beef hamburger sirloin. Prosciutto fatback doner swine corned beef leberkas. Pancetta swine beef pastrami ground round spare ribs jerky bresaola brisket. Venison shank pork belly bresaola fatback. Sausage tenderloin tongue fatback ham hock spare ribs pork loin pork belly shoulder short loin corned beef ground round.
 
+# Pagination
+paginate: 9
+paginate_path: "/page:num/"
+
 # Social
 twitter_username: jekyllrb
 github_username:  jekyllrb
