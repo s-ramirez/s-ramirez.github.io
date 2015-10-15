@@ -2,6 +2,7 @@
 layout: post
 title:  "Switching from Sublime Text 2 to Atom"
 description: As a Sublime Text user for more than a year, I took the personal challenge (it's harder than it sounds) of switching the text editor I used daily for web development purposes.
+image: http://blog.takipi.com/wp-content/uploads/2014/08/VS.png
 permalink: /switching-from-sublime-to-atom
 ---
 
