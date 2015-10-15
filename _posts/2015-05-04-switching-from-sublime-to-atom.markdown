@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Switching from Sublime Text 2 to Atom"
-description: As a Sublime Text user for more than a year, I took the personal challenge (it's harder than it sounds) of switching the text editor I used daily for web development purposes.
+description: After more than a year using Sublime Text I decided it was time to give Github's new tool a try.
 image: http://formyedu.com/wp-content/uploads/2015/06/atom-logo.png
 permalink: /switching-from-sublime-to-atom
 ---
