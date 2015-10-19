@@ -16,7 +16,7 @@ layout: default
                   <p>{{ post.description }}</p>
               </div>
               <div class="card-action">
-                  <a href="{{ post.url }}">Read more</a>
+                  <a href="{{ post.url }}" class="teal-text">Read more</a>
               </div>
           </div>
       </div>
@@ -43,7 +43,7 @@ layout: default
 
             {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
-            <li class="active brown"><a href="">{{ page }}</a></li>
+            <li class="active indigo"><a href="">{{ page }}</a></li>
             {% elsif page == 1 %}
             <li class="waves-effect"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
             {% else %}

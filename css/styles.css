@@ -18,6 +18,10 @@
     width: 160px;
 }
 
+.parallax-container {
+    height: 350px;
+}
+
 /* Footer */
 footer.page-footer {
     margin-top: 0;
