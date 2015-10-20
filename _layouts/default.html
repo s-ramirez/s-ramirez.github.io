@@ -1,7 +1,13 @@
 <!DOCTYPE html>
     {% include head.html %}
+    {% include header.html %}
     <body>
-        {% include header.html %}
+        <div class="cover"></div>
+        {{ content }}
+        <script src="{{ site.baseurl | prepend: site.url }}/js/site.js"></script>
+    </body>
+    {% include footer.html %}
+    <!-- <body>
         <div class="parallax-container">
             <div class="container">
                 <img class="user-photo" src="{{site.image}}">
@@ -17,6 +23,6 @@
             {% include footer.html %}
         </main>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="{{ site.baseurl | prepend: site.url }}/js/site.js"></script>
-    </body>
+
+    </body> -->
 </html>
