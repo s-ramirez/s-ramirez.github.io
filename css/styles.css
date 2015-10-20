@@ -1,28 +1,68 @@
-/* Cards */
-.card .card-image img {
-    height: 150px
+html {
+  font-family: 'Droid Sans';
+}
+/* Header */
+header {
+  position: relative;
+  background-color: white;
+  width: 100%;
 }
 
-.card.small .card-action {
-    padding: 10px 20px;
+.nav {
+  text-align: center;
+  right: 100px;
 }
 
-.card .card-image .card-title {
-    font-size: 20px;
-    padding: 10px 20px;
+.nav li{
+  display: inline-block;
 }
 
-/* User image */
-.user-photo {
-    border-radius: 100%;
-    width: 160px;
+.nav li a {
+  color: rgba(0,0,0,0.6);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 14px;
+}
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.parallax-container {
-    height: 350px;
+.cover {
+  height: 350px;
+  background-color:black;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  color: rgba(0,0,0,0.8);
+  padding: 2em 0;
+}
+
+.post h1 {
+  font-size: 1.7em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.post small {
+  font-size: 0.8em;
+  margin-top: 1em;
+  color: rgba(0,0,0,0.4)
 }
 
 /* Footer */
-footer.page-footer {
-    margin-top: 0;
+.contact {
+  text-align: center;
+}
+.contact li{
+  display: inline-block;
+  padding: 10px;
 }
