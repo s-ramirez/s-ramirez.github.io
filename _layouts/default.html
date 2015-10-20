@@ -1,17 +1,14 @@
 <!DOCTYPE html>
     {% include head.html %}
-    <!-- Always shows a header, even in smaller screens. -->
     <body>
         {% include header.html %}
         <div class="parallax-container">
-            <div class="container white-text center">
-                <br><br>
-                <img class="responsive-img user-photo" src="{{site.image}}">
-                <h3 class="header center">{{ site.name }}</h3>
+            <div class="container">
+                <img class="user-photo" src="{{site.image}}">
+                <h3>{{ site.name }}</h3>
                 <div class="center">
-                    <h5 class="header col s12 light">{{ site.description }}</h5>
+                    <h5>{{ site.description }}</h5>
                 </div>
-                <br><br>
             </div>
             <div class="parallax"><img src="{{ site.baseurl | prepend: site.url }}/images/cover.jpg"></div>
         </div>
@@ -20,7 +17,6 @@
             {% include footer.html %}
         </main>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="{{ site.baseurl | prepend: site.url }}/js/materialize.min.js"></script>
         <script src="{{ site.baseurl | prepend: site.url }}/js/site.js"></script>
     </body>
 </html>
