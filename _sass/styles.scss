@@ -1,0 +1,89 @@
+@import 'variables';
+
+html {
+  font-family: $font-stack;
+}
+/* Header */
+header {
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.name {
+  color: $header-color;
+  position: absolute;
+  font-weight: bold;
+  left: 20px;
+}
+
+.nav {
+  text-align: right;
+  right: 100px;
+  padding: 0px 20px 0 0px;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.nav li a {
+  color: $navigation-color;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 14px;
+}
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  height: 350px;
+  background-color:black;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  color: $header-color;
+  padding: 2em 0;
+  margin: 0 20px;
+}
+
+.post h1 {
+  font-size: 1.7em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.post h1 a {
+    text-decoration: none;
+    color: $header-color;
+}
+
+.post h1 a:hover {
+    text-decoration: none;
+}
+
+.post small {
+  font-size: 0.8em;
+  margin-top: 1em;
+  color: $navigation-color;
+}
+
+/* Footer */
+.contact {
+  text-align: center;
+  padding: 0;
+}
+.contact li{
+  display: inline-block;
+  padding: 10px;
+}
