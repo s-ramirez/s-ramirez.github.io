@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<post>
-  <h3>{{ page.title }}</h3>
-    <p class="post-meta">
+<div class="content">
+  <h1>{{ page.title }}</h3>
+    <p class="meta">
       <i>{% if page.author %} by {{ page.author }} • {% endif %} {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</i>
     </p>
     <p>
       {{ content }}
     </p>
-</post>
+</div>
