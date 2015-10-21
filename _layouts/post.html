@@ -2,9 +2,9 @@
 layout: default
 ---
 <div class="content post">
-  <h1>{{ page.title }}</h3>
-    <small>
-      Posted on {{ page.date | date: "%b %-d, %Y" }}
-    </small>
-    {{ content }}
+  <div class="post-header">
+    <h1>{{ page.title }}</h1>
+    <small>Posted on {{ page.date | date: "%b %-d, %Y" }}</small>
+  </div>
+  {{ content }}
 </div>
