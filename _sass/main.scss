@@ -1,0 +1,27 @@
+.post-preview {
+  border-bottom: 1px solid #ccc;
+  color: $header-color;
+  padding: 2em 0;
+  margin: 0 20px;
+
+  h1 {
+    font-size: 1.7em;
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    a {
+      text-decoration: none;
+      color: $header-color;
+
+      &:hover {
+          text-decoration: none;
+      }
+    }
+  }
+
+  small {
+    font-size: 0.8em;
+    margin-top: 1em;
+    color: $navigation-color;
+  }
+}
