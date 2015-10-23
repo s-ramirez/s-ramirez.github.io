@@ -1,9 +1,17 @@
 <!DOCTYPE html>
     {% include head.html %}
-    {% include header.html %}
     <body>
-        <div class="cover"></div>
-        {{ content }}
+        <div class="sidebar">
+            <img src="picture.jpg"/>
+            <ul class="sidebar-links">
+                <li><a href="/">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
         <script src="{{ site.baseurl | prepend: site.url }}/js/site.js"></script>
     </body>
     {% include footer.html %}
