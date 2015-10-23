@@ -82,20 +82,16 @@ body {
 @media (min-width: 992px) {
     .content {
         width: 70%;
-
+        float: left;
     }
     .sidebar {
         width: 30%;
         float: left;
 
         .sidebar-image {
-            height: 100px;
-            width: 100px;
-            margin: 15px auto;
+            height: 150px;
+            width: 150px;
+            margin: 0 auto 15px;
         }
-    }
-
-    .content {
-        float: left;
     }
 }
