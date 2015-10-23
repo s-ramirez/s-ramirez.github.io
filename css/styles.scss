@@ -76,3 +76,19 @@ body {
     padding: 10px;
   }
 }
+
+/* Responsiveness */
+@media (min-width: 992px) {
+    .content {
+        width: 70%;
+        
+    }
+    .sidebar {
+        width: 30%;
+        .sidebar-image {
+            height: 100px;
+            width: 100px;
+            margin: 15px auto;
+        }
+    }
+}
