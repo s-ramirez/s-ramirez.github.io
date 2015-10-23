@@ -80,6 +80,9 @@ body {
 
 /* Responsiveness */
 @media (min-width: 992px) {
+    .sidebar {
+        padding: 2em 0;
+    }
     .content {
         width: 70%;
         float: left;
