@@ -4,7 +4,7 @@
     margin-bottom: 1em;
 
     h1 {
-      font-size: 1.7em;
+      font-size: 2em;
       margin-top: 0;
       margin-bottom: 0;
       color: $header-color;
@@ -15,9 +15,22 @@
       font-size: 0.8em;
     }
   }
+  .post-content {
+      h1 {
+        font-size: 1.6em;
+        color: $header-color;
+      }
+      h2 {
+        font-size: 1.4em;
+        color: $header-color;
+      }
+      a {
+        color: $link-color;
+      }
+  }
   p {
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.7em;
     color: $content-color;
   }
 }
