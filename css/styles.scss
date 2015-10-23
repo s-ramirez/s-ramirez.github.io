@@ -29,28 +29,37 @@ header {
   left: 20px;
 }
 
-.nav {
-  text-align: right;
-  right: 100px;
-  padding: 0px 20px 0 0px;
-
-  li{
-    display: inline-block;
-
-    a {
-      color: $navigation-color;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 14px;
-      font-size: 14px;
+/* Sidebar */
+.sidebar {
+    .sidebar-image {
+        height: 100px;
+        border-radius: 100%;
+        background-image: url("images/user-picture.jpg");
+        background-size: cover;
+        width: 100px;
+        margin: 15px auto;
+        background-position: right;
     }
-  }
+    
+    .sidebar-links{
+      text-align: center;
+      padding: 0px 20px 0 0px;
+
+      li{
+        display: inline-block;
+
+        a {
+          color: $navigation-color;
+          font-weight: bold;
+          text-decoration: none;
+          padding: 14px;
+          font-size: 14px;
+        }
+      }
+    }
 }
 
-.cover {
-  height: 350px;
-  background-color:black;
-}
+/* Content */
 
 .content {
   max-width: 700px;
