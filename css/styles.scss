@@ -22,13 +22,6 @@ header {
   width: 100%;
 }
 
-.name {
-  color: $header-color;
-  position: absolute;
-  font-weight: bold;
-  left: 20px;
-}
-
 .nav {
   text-align: center;
   padding: 0px 20px 0 0px;
@@ -48,9 +41,41 @@ header {
 
 .cover {
   height: 350px;
-  position: relative;
   background-size: cover;
   background-image: url("/images/cover.jpg");
+
+  .information-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);    
+  }
+
+  .information {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      small {
+          text-transform: uppercase;
+          font-size: 18px;
+      }
+
+      h1 {
+          margin: 15px 0;
+          text-transform: uppercase;
+          font-size: 2em;
+          letter-spacing: 2px;
+          font-family: $font-header;
+      }
+
+      p {
+          font-weight: 300;
+          margin: 0;
+      }
+  }
 }
 
 .content {
