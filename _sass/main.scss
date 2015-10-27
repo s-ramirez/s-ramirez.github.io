@@ -1,3 +1,28 @@
+.information {
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+
+    small {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    h1 {
+        margin: 15px 0;
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-family: $font-header;
+    }
+
+    p {
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
 .post-preview {
   border-bottom: 1px solid #ccc;
   color: $header-color;
@@ -8,6 +33,7 @@
     font-size: 1.7em;
     margin-top: 0;
     margin-bottom: 1em;
+    font-family: $font-header;
 
     a {
       text-decoration: none;

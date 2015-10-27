@@ -3,28 +3,11 @@
     {% include header.html %}
     <body>
         <div class="cover">
-            <div class="information" style="
-    color: white;
-    position: absolute;
-    left: 25%;
-    top: 30%;
-">
-  <small style="
-    text-transform: uppercase;
-    font-size: 18px;
-">Software Engineer</small>
-  <h1 style="
-    margin: 15px 0;
-    text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 2px;
-">Sebastian Ramirez</h1>
-  <p style="
-    font-weight: 300;
-    margin: 0;
-">Web Developer, currently pursuing a MSc. @ <a href="#">Wake Forest University</a>
-</p>
-  </div>
+            <div class="information">
+                <small>Software Engineer</small>
+                <h1>Sebastian Ramirez</h1>
+                <p>Web Developer, currently pursuing a MSc. @ Wake Forest University</p>
+            </div>
         </div>
         {{ content }}
         <script src="{{ site.baseurl | prepend: site.url }}/js/site.js"></script>
