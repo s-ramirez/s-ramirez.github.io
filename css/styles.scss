@@ -48,7 +48,7 @@ header {
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: rgba(12, 40, 55, 0.75);    
+    background-color: rgba(12, 40, 55, 0.75);
   }
 
   .information {
@@ -81,6 +81,11 @@ header {
 .content {
   max-width: 700px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
 }
 
 /* Footer */
