@@ -71,6 +71,11 @@ header {
           font-family: $font-header;
       }
 
+      a {
+        text-decoration: none;
+        color: $link-color-header;
+      }
+
       p {
           font-weight: 300;
           margin: 0;
@@ -81,11 +86,6 @@ header {
 .content {
   max-width: 700px;
   margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  color: $link-color;
 }
 
 /* Footer */
