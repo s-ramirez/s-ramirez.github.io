@@ -1,7 +1,8 @@
 # Site settings
 title: sramirez
+small: Software Engineer
 name: Sebastián Ramírez
-description: Web developer
+description: Software Engineer @ TEC Costa Rica. Currently pursuing an M.Sc in Computer Science @ Wake Forest University. Web developer.
 email: sramirez10r@gmail.com
 image: https://lh4.googleusercontent.com/-m32wN5pQw2Q/VhMsTWsKJDI/AAAAAAAALWM/1anmFkVxmNU/s562-no/IMG_0858.JPG
 
@@ -9,9 +10,6 @@ permalink: pretty
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://sramirez.me" # the base hostname & protocol for your site
-
-about_author: >
-  Bacon ipsum dolor amet meatball cupim tenderloin frankfurter ham hock pork loin chuck kevin ham shankle capicola. Chuck prosciutto venison drumstick cow fatback picanha pig swine corned beef hamburger sirloin. Prosciutto fatback doner swine corned beef leberkas. Pancetta swine beef pastrami ground round spare ribs jerky bresaola brisket. Venison shank pork belly bresaola fatback. Sausage tenderloin tongue fatback ham hock spare ribs pork loin pork belly shoulder short loin corned beef ground round.
 
 # Pagination
 paginate: 9
