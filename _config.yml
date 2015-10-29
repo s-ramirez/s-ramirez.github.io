@@ -21,6 +21,9 @@ github_username:  s-ramirez
 # Build settings
 markdown: kramdown
 
+#Disqus
+disqusid: sramirez91
+
 #Sass configuration
 sass:
   sass_dir: _sass
