@@ -27,6 +27,12 @@ header {
 
     .langs {
         float: right;
+
+        li {
+            a {
+                color: $languages-color;
+            }
+        }
     }
 
     .nav, .langs {
