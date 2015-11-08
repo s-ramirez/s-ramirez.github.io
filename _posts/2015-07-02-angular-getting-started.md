@@ -2,6 +2,7 @@
 layout: post
 title:  "AngularJS: Getting started"
 description: These are the best resources I've found in the web to learn about this awesome technology.
+comments: True
 permalink: /angular-form-validation
 ---
 
