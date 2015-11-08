@@ -23,7 +23,11 @@ header {
 }
 
 .header-container {
-    margin: 0 15px;
+    margin: 0 25px;
+
+    .langs {
+        float: right;
+    }
 
     .nav, .langs {
       display: inline-block;
