@@ -4,7 +4,7 @@
     margin-bottom: 1em;
 
     h1 {
-      font-size: 2em;
+      font-size: 1.7em;
       margin-top: 0;
       margin-bottom: 0;
       color: $header-color;
@@ -16,12 +16,16 @@
     }
   }
   .post-content {
+      font-size: 1em;
+      line-height: 1.7em;
+      color: $content-color;
+      
       h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         color: $header-color;
       }
       h2 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         color: $header-color;
       }
       a {
@@ -32,10 +36,5 @@
           text-decoration: underline;
         }
       }
-  }
-  p {
-    font-size: 1em;
-    line-height: 1.7em;
-    color: $content-color;
   }
 }
