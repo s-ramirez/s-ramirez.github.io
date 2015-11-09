@@ -1,0 +1,20 @@
+en:
+  blog:
+    title: "Blog"
+    url:   "/index.html"
+  about:
+    title: "About"
+    url:   "/about/"
+  contact:
+    title: "Contact"
+    url:   "/about/"
+fr:
+  blog:
+    title: "Blog"
+    url:   "/es/"
+  about:
+    title: "Acerca"
+    url:   "/acerca/"
+  contact:
+    title: "Contacto"
+    url:   "/acerca/"
