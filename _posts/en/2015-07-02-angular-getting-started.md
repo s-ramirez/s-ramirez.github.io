@@ -2,7 +2,7 @@
 layout: post
 title:  "AngularJS: Getting started"
 description: These are the best resources I've found in the web to learn about this awesome technology.
-name: angular-form-validation
+name: angular-getting-started
 comments: True
 ---
 
