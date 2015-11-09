@@ -6,4 +6,4 @@ The pages are produced with the static website generator [Jekyll](http://jekyllr
 The source code is freely available on [GitHub](https://github.com/s-ramirez/s-ramirez.github.io).
 
 ## Credits
-favicon made by [Catalin Fertu](http://catalinfertu.com) from [www.flaticon.com](www.flaticon.com) and is licensed under [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+favicon made by [Catalin Fertu](http://catalinfertu.com) from [www.flaticon.com](http://www.flaticon.com) and is licensed under [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
