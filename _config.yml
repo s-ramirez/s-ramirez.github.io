@@ -6,8 +6,7 @@ email: sramirez10r@gmail.com
 
 permalink: /:title/
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://sramirez.me" # the base hostname & protocol for your site
+base: http://sramirez.me # the base hostname & protocol for your site
 
 # Social
 twitter_username: s_ramirez91
