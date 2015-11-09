@@ -5,7 +5,7 @@ description: Web developer. Software Engineer @ TEC Costa Rica. Currently pursui
 email: sramirez10r@gmail.com
 image: https://lh4.googleusercontent.com/-m32wN5pQw2Q/VhMsTWsKJDI/AAAAAAAALWM/1anmFkVxmNU/s562-no/IMG_0858.JPG
 
-permalink: pretty
+permalink: /:title/
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://sramirez.me" # the base hostname & protocol for your site
@@ -27,3 +27,17 @@ disqusid: sramirez91
 #Sass configuration
 sass:
   sass_dir: _sass
+
+#Languages configuration
+defaults:
+    -
+        scope:
+            path: _posts/en
+        values:
+            lang: en
+            layout: default
+    -
+        scope:
+            path: _posts/es
+        values:
+            lang: es

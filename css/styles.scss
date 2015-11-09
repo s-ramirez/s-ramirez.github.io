@@ -30,6 +30,9 @@ header {
         li a {
             color: $languages-color;
         }
+        .es:lang(es), .en:lang(en) {
+            color: $link-color;
+        }
     }
 
     .nav li a {

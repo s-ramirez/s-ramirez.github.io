@@ -3,13 +3,15 @@ layout: default
 ---
 
 <!-- Posts -->
-<div class="content">
-    {% for post in paginator.posts %}
-    <div class="post-preview">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p>{{ post.description }}</p>
-        <small>{{ post.date | date: '%B %d, %Y'}}</small>
+{% assign posts=site.posts | where:"lang", page.lang %}
+    <div class="content">
+        {% for post in paginator.posts %}
+        <div class="post-preview">
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p>{{ post.description }}</p>
+            <small>{{ post.date | date: '%B %d, %Y'}}</small>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
+{% endfor %}
 <!-- TODO: Pagination -->
