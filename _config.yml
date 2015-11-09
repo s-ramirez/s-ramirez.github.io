@@ -26,7 +26,7 @@ sass:
 defaults:
     -
         scope:
-            path: _posts/en
+            path: ""
         values:
             lang: en
             layout: default
