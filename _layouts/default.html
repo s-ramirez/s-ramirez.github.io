@@ -5,9 +5,14 @@
         <div class="cover">
             <div class="information-container">
                 <div class="information">
-                    <small>Software Engineer</small>
-                    <h1>{{site.name}}</h1>
-                    <p>Web developer. Software Engineer @ <a href="http://www.tec.ac.cr/">TEC Costa Rica</a>.<br/>Currently pursuing an M.Sc in Computer Science @ <a href="http://www.wfu.edu/">Wake Forest University</a>.</p>
+                    {% for translation in site.data.translations[page.lang] %}
+                      <small>{{ translation[1].title }}</small>
+                      <h1>{{site.name}}</h1>
+                      <p>
+                        {{ translation[1].tec }}<a href="http://www.tec.ac.cr/">TEC Costa Rica</a>.<br/>
+                        {{ translation[1].wake }}<a href="http://www.wfu.edu/">Wake Forest University</a>.
+                      </p>
+                    {% endfor %}
                 </div>
             </div>
         </div>

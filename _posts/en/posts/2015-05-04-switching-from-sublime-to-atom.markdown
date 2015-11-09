@@ -1,10 +1,7 @@
 ---
-layout: post
 title:  "Switching Sublime Text to Atom"
 description: After more than a year using Sublime Text I decided it was time to give Github's new tool a try.
 name: switching-from-sublime-to-atom
-lang: en
-comments: True
 ---
 
 As a Sublime Text user for more than a year, I took the personal challenge (it's harder than it sounds) of switching the text editor I used daily for web development purposes. It's been a week since I've made the change and this is my experience so far.

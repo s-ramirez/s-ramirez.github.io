@@ -1,10 +1,7 @@
 ---
-layout: post
 title:  "AngularJS: Getting started"
 description: These are the best resources I've found in the web to learn about this awesome technology.
 name: angular-getting-started
-lang: en
-comments: True
 ---
 
 For the past two years I've been working on web applications primarily developed using the javascript framework AngularJS. At the beginning I was pretty skeptic about switching from my comfort zone's JQuery or [Vanilla.js](http://vanilla-js.com/), even more when I was attacked by all these new terms like *promises*, *services*, *modules*. After some reading, watching video tutorials, and practice I've learned quite a bit about the framework. I'm still not an *expert* on the subject but I've learned enough to be able to develop fully functional single-page web applications and sometimes the [AngularJS Official Documentation](https://docs.angularjs.org/api) isn't just quite enough. So here are the resources I've found the most useful while building my skills.

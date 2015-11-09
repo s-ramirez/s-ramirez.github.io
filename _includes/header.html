@@ -1,16 +1,16 @@
 <header>
     <div class="header-container">
         <ul class="nav">
-            <li><a href="/">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            {% for menu in site.data.navigation[page.lang] %}
+              <li><a href="{{ menu[1].url }}">{{ menu[1].title }}</a></li>
+            {% endfor %}
         </ul>
         {% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
         <ul class="langs">
             {% for post in posts %}
-            <li>
-                <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
-            </li>
+              <li>
+                  <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+              </li>
             {% endfor %}
         </ul>
     </div>

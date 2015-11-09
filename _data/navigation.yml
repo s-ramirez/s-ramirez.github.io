@@ -1,14 +1,14 @@
 en:
   blog:
     title: "Blog"
-    url:   "/index.html"
+    url:   "/"
   about:
     title: "About"
     url:   "/about/"
   contact:
     title: "Contact"
     url:   "/about/"
-fr:
+es:
   blog:
     title: "Blog"
     url:   "/es/"
