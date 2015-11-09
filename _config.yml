@@ -3,16 +3,11 @@ title: sramirez
 name: Sebastián Ramírez
 description: Web developer. Software Engineer @ TEC Costa Rica. Currently pursuing an M.Sc in Computer Science @ Wake Forest University.
 email: sramirez10r@gmail.com
-image: https://lh4.googleusercontent.com/-m32wN5pQw2Q/VhMsTWsKJDI/AAAAAAAALWM/1anmFkVxmNU/s562-no/IMG_0858.JPG
 
 permalink: /:title/
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://sramirez.me" # the base hostname & protocol for your site
-
-# Pagination
-paginate: 9
-paginate_path: "/page:num/"
 
 # Social
 twitter_username: s_ramirez91
@@ -41,3 +36,4 @@ defaults:
             path: _posts/es
         values:
             lang: es
+            layout: default

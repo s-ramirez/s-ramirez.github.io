@@ -3,6 +3,7 @@ layout: post
 title:  "Switching Sublime Text to Atom"
 description: After more than a year using Sublime Text I decided it was time to give Github's new tool a try.
 name: switching-from-sublime-to-atom
+lang: en
 comments: True
 ---
 
