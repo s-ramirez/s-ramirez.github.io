@@ -4,7 +4,7 @@
 
 @import 'variables';
 @import 'main';
-@import 'post';
+@import 'content';
 
 html {
   font-family: $font-stack;
@@ -85,7 +85,6 @@ header {
           text-transform: uppercase;
           font-size: 2em;
           letter-spacing: 2px;
-          font-family: $font-header;
       }
 
       a {

@@ -7,7 +7,7 @@ en:
     url:   "/about/"
   contact:
     title: "Contact"
-    url:   "/about/"
+    url:   "/about/#contact"
 es:
   blog:
     title: "Blog"
@@ -17,4 +17,4 @@ es:
     url:   "/acerca/"
   contact:
     title: "Contacto"
-    url:   "/acerca/"
+    url:   "/acerca/#contacto"

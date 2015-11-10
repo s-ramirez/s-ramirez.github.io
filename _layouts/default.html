@@ -9,14 +9,16 @@
                       <small>{{ translation[1].title }}</small>
                       <h1>{{site.name}}</h1>
                       <p>
-                        {{ translation[1].tec }}<a href="http://www.tec.ac.cr/">TEC Costa Rica</a>.<br/>
-                        {{ translation[1].wake }}<a href="http://www.wfu.edu/">Wake Forest University</a>.
+                        {{ translation[1].tec }} <a href="http://www.tec.ac.cr/">TEC Costa Rica</a>.<br/>
+                        {{ translation[1].wake }} <a href="http://www.wfu.edu/">Wake Forest University</a>.
                       </p>
                     {% endfor %}
                 </div>
             </div>
         </div>
-        {{ content }}
+        <div class="content">
+          {{ content }}
+        </div>
         <script src="{{ site.baseurl | prepend: site.url }}/js/site.js"></script>
     </body>
     {% include footer.html %}

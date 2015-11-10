@@ -28,6 +28,7 @@ defaults:
     values:
       lang: "en"
       layout: "post"
+      comments: true
   -
     scope:
       path: "_posts/es"
