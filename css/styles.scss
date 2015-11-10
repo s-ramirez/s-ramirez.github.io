@@ -27,6 +27,8 @@ header {
 
     .langs {
         float: right;
+        text-transform: uppercase;
+        
         li a {
             color: $languages-color;
         }
