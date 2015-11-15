@@ -12,6 +12,7 @@ github_username:  s-ramirez
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
 
 #Disqus
 disqusid: sramirez91
