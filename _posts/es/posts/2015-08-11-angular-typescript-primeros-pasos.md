@@ -24,10 +24,13 @@ Inicialmente creamos la estructura del proyecto en una nueva carpeta llamada `an
 Luego creamos una nueva carpeta a la que llamaremos `app` donde pondremos nuestro código TypeScript.
 
 Finalmente creamos dos archivos con los siguientes nombres
+
 * `app/app.ts` - El archivo principal de nuestra aplicación con extensión TypeScript.
+
 * `index.html` - Nuestra página HTML.
 
 La estructura debe verse de la siguiente manera.
+
 {% highlight bash %}
 angular-prueba
 └── src
