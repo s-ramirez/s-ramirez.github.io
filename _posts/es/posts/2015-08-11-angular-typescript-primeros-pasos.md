@@ -16,6 +16,7 @@ Un día decidí darle una oportunidad y en cuestión de un par de horas ya manej
 La única herramienta necesaria para empezar es **Node.js**. Para realizar esta tarea existen muchas guías útiles, [esta](http://www.desarrolloweb.com/articulos/instalar-node-js.html) es una de las más detalladas que encontré y explica los pasos a seguir en los tres sistemas operativos más populares.
 
 ## Configuración Inicial
+
 ### Estructura
 
 Inicialmente creamos la estructura del proyecto en una nueva carpeta llamada `angular-prueba`. Adentro de esta colocamos otra carpeta llamada `src` donde almacenaremos nuestro código fuente.
@@ -27,7 +28,7 @@ Finalmente creamos dos archivos con los siguientes nombres
 * `index.html` - Nuestra página HTML.
 
 La estructura debe verse de la siguiente manera.
-{% highlight %}
+{% highlight bash %}
 angular-prueba
 └── src
     ├── app
@@ -37,21 +38,22 @@ angular-prueba
 
 ### Instalando dependencias
 Utilizaremos `npm` para instalar las dependencias de nuestra aplicación. Para esto abrimos una línea de comandos (cmd o terminal) en la ráiz de nuestro proyecto y escribimos los siguientes comandos.
-1. Inicializamos el sistema de manejo de paquetes de Node en nuestro proyecto
 
-{% highlight %}
+Inicializamos el sistema de manejo de paquetes de Node en nuestro proyecto
+
+{% highlight bash %}
 npm init -y
 {% endhighlight %}
 
-2. Instalamos las librerías `angular2` y `systemjs`, esta última permite la carga de *módulos* como veremos más adelante.
+Instalamos las librerías `angular2` y `systemjs`, esta última permite la carga de *módulos* como veremos más adelante.
 
-{% highlight %}
+{% highlight bash %}
 npm install angular2 systemjs --save
 {% endhighlight %}
 
-3. Instalamos dos dependencias para la hora de desarrollar. Estas son `typescript`, el compilador del lenguaje que estaremos utilizando, y `live-server`, el cual permite la creación de un servidor local para probar nuestra aplicación que incluye una recarga automática del navegador cuando se realizan cambios en los archivos.
+Instalamos dos dependencias para la hora de desarrollar. Estas son `typescript`, el compilador del lenguaje que estaremos utilizando, y `live-server`, el cual permite la creación de un servidor local para probar nuestra aplicación que incluye una recarga automática del navegador cuando se realizan cambios en los archivos.
 
-{% highlight %}
+{% highlight bash %}
 npm install typescript live-server --save-dev
 {% endhighlight %}
 
@@ -60,10 +62,12 @@ Una vez que hayamos instalado nuestras dependencias, podemos ver que se ha cread
 Lo siguiente será abrir el archivo `package.json` y editar la sección `scripts` agregando las siguientes líneas de código.
 
 {% highlight json %}
-"scripts": {
-    "tsc": "tsc -p src",
-    "start": "live-server --open=src"
- }
+{
+  "scripts": {
+      "tsc": "tsc -p src",
+      "start": "live-server --open=src"
+   }
+}
 {% endhighlight %}
 
 Gracias a esto, de ahora en adelante podremos correr los commandos `npm tsc` para compilar nuestro código TypeScript (luego de realizar su configuración) y `npm start` para iniciar nuestro servidor local.
@@ -218,7 +222,7 @@ Antes de probar nuestro código en el navegador, es necesario compilar nuestro c
 
 Abrimos una línea de comandos en la raíz de nuestro proyecto y ejecutamos el siguiente comando.
 
-{% highlight %}
+{% highlight bash %}
 npm run tsc
 {% endhighlight %}
 
@@ -230,7 +234,7 @@ Finalmente es hora de probar nuestra aplicación en el navegador.
 
 En la misma línea de comando escribiremos lo siguiente.
 
-{% highlight %}
+{% highlight bash %}
 npm start
 {% endhighlight %}
 
