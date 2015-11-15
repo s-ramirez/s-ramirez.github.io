@@ -17,6 +17,7 @@ La única herramienta necesaria para empezar es **Node.js**. Para realizar esta 
 
 ## Configuración Inicial
 ### Estructura
+
 Inicialmente creamos la estructura del proyecto en una nueva carpeta llamada `angular-prueba`. Adentro de esta colocamos otra carpeta llamada `src` donde almacenaremos nuestro código fuente.
 
 Luego creamos una nueva carpeta a la que llamaremos `app` donde pondremos nuestro código TypeScript.
