@@ -5,6 +5,7 @@
 @import 'variables';
 @import 'main';
 @import 'content';
+@import 'syntax';
 
 html {
   font-family: $font-stack;
@@ -28,7 +29,7 @@ header {
     .langs {
         float: right;
         text-transform: uppercase;
-        
+
         li a {
             color: $languages-color;
         }

@@ -27,44 +27,50 @@ Finalmente creamos dos archivos con los siguientes nombres
 * `index.html` - Nuestra página HTML.
 
 La estructura debe verse de la siguiente manera.
-```
+{% highlight %}
 angular-prueba
 └── src
     ├── app
     │   └── app.ts
     └── index.html
-```
+{% endhighlight %}
 
 ### Instalando dependencias
 Utilizaremos `npm` para instalar las dependencias de nuestra aplicación. Para esto abrimos una línea de comandos (cmd o terminal) en la ráiz de nuestro proyecto y escribimos los siguientes comandos.
 1. Inicializamos el sistema de manejo de paquetes de Node en nuestro proyecto
-```
+
+{% highlight %}
 npm init -y
-```
+{% endhighlight %}
+
 2. Instalamos las librerías `angular2` y `systemjs`, esta última permite la carga de *módulos* como veremos más adelante.
-```
+
+{% highlight %}
 npm install angular2 systemjs --save
-```
+{% endhighlight %}
+
 3. Instalamos dos dependencias para la hora de desarrollar. Estas son `typescript`, el compilador del lenguaje que estaremos utilizando, y `live-server`, el cual permite la creación de un servidor local para probar nuestra aplicación que incluye una recarga automática del navegador cuando se realizan cambios en los archivos.
-```
+
+{% highlight %}
 npm install typescript live-server --save-dev
-```
+{% endhighlight %}
+
 Una vez que hayamos instalado nuestras dependencias, podemos ver que se ha creado el archivo `package.json`, el cual almacena lo que hemos instalado gracias a la utlización de `--save` y `--save-dev`, y la carpeta `node_modules` donde se encuentran los archivos que hemos instalado.
 
 Lo siguiente será abrir el archivo `package.json` y editar la sección `scripts` agregando las siguientes líneas de código.
 
-```json
+{% highlight json %}
 "scripts": {
     "tsc": "tsc -p src",
     "start": "live-server --open=src"
  }
-```
+{% endhighlight %}
 
 Gracias a esto, de ahora en adelante podremos correr los commandos `npm tsc` para compilar nuestro código TypeScript (luego de realizar su configuración) y `npm start` para iniciar nuestro servidor local.
 
 ### Configurando el compilador de TypeScript
 Es necesario agregar un archivo `tsconfig.json` en la carpeta `src` de nuestro proyecto el cual almacenará la configuración del compilador de TypeScript. En este nuevo archivo agregaremos las siguientes líneas.
-```json
+{% highlight json %}
 {
   "compilerOptions": {
     "target": "ES5",
@@ -76,14 +82,14 @@ Es necesario agregar un archivo `tsconfig.json` en la carpeta `src` de nuestro p
     "noImplicitAny": false
   }
 }
-```
+{% endhighlight %}
 *Más información sobre el archivo tsconfig.json puede encontrarse en su [documentación oficial](https://github.com/Microsoft/TypeScript/wiki/tsconfig.json) lastimosamente esta sólo se encuentra disponible en inglés*
 
 ## Hola Angular 2.0
 Luego de completar todos los pasos necesarios para la configuración inicial, finalmente llegó la hora de desarrollar.
 
 Es hora de juntar todas las librerías que instalamos previamente en nuestro `index.html`. Como estas se encuentran en la carpeta `node_modules`, debemos identificar correctamente su ruta.
-```html
+{% highlight html %}
 <html>
   <head>
     <title>Probando Angular2</title>
@@ -94,12 +100,12 @@ Es hora de juntar todas las librerías que instalamos previamente en nuestro `in
   <body>
   </body>
 </html>
-```
+{% endhighlight %}
 
 Después de agregar estas líneas, aprovecharemos la inclusión de `systemjs` para cargar los módulos en formato `.js` que obtendremos una vez que nuestro código TypeScript haya sido compilado.
 
 En este proyecto, el único módulo que estaremos desarrollando se llamará `app`.
-```html
+{% highlight html %}
 <html>
   <head>
     <title>Probando Angular2</title>
@@ -117,27 +123,30 @@ En este proyecto, el único módulo que estaremos desarrollando se llamará `app
   <body>
   </body>
 </html>
-```
+{% endhighlight %}
 
 ### Nuestro primer componente
-Iniciaremos editando el archivo `app.ts` que creamos previamente. Agregamos la siguiente línea
-```js
+Iniciaremos editando el archivo `app.ts` que creamos previamente. Agregamos la siguiente línea.
+
+{% highlight javascript %}
 import {Component} from 'angular2/angular2';
-```
+{% endhighlight %}
+
 La utilización de `import` permite obtener definiciones de clases det tal manera que nuestro código TypeScript ahora será capaz de conocer las propiedades y métodos de estas.
 
 En este caso hemos importado la clase `Component` proveniente de las declaraciones ubicadas en `angular2/angular2`.
 
 Ahora que nuestro compilador conoce qué es un `Component` podremos definir uno de la siguiente manera.
 
-```js
+{% highlight javascript %}
 import {Component} from 'angular2/angular2';
 
 @Component({
     selector: 'app-prueba',
     template: '<h1>Hola Angular2</h1>'
 })
-```
+{% endhighlight %}
+
 Hemos declarado `@Component` y le hemos agregado dos propiedades. El símbolo `@` le indica al compilador de TypeScript que `Component` es una *decoración*
 > Un Decorador es una función que modifica una clase, propiedad, método o parámetro de un método.
 
@@ -147,25 +156,27 @@ Las dos propiedades que hemos agregado son `selector` y `template`. La primera i
 
 El siguiente paso será crear la *clase* donde podremos definir la lógica de nuestro componente más adelante. Para esto agregamos las siguientes líneas al final de nuestro `app.ts`.
 
-```js
+{% highlight javascript %}
 class Componente { }
-```
+{% endhighlight %}
 
 Finalmente tendremos que utilizar el método `bootstrap` de Angular 2 para indicar que deseamos iniciar nuestra aplicación utilizando esta clase como *raíz* al inicio de nuestra ejecución.
 
 Para este paso tendremos que agregar el método `bootstrap` a nuestra línea de `import` al inicio de `app.ts` para que quede de la siguiente manera.
 
-```js
+{% highlight javascript %}
 import {Component, bootstrap} from 'angular2/angular2';
-```
+{% endhighlight %}
+
 De ahora en adelante podremos usar el método `bootstrap`, lo usaremos al final del archivo para agregar el componente que hemos creado.
 
-```js
+{% highlight javascript %}
 bootstrap(Componente);
-```
+{% endhighlight %}
 
-Al finalizr, nuestro `app.ts` se verá de la siguiente manera.
-```js
+Al finalizar, nuestro `app.ts` se verá de la siguiente manera.
+
+{% highlight javascript %}
 import {Component, bootstrap} from 'angular2/angular2';
 
 @Component({
@@ -176,12 +187,12 @@ import {Component, bootstrap} from 'angular2/angular2';
 class Componente { }
 
 bootstrap(Componente);
-```
+{% endhighlight %}
 
 ### Agregando el componente
 Anteriormente, al definir nuestro componente, escogimos el selector que deseabamos utilizar en el código html. Es hora de agregarlo en el `<body></body>` de nuestro `index.html` para obtener lo siguiente.
 
-```html
+{% highlight html %}
 <html>
   <head>
     <title>Probando Angular2</title>
@@ -200,14 +211,17 @@ Anteriormente, al definir nuestro componente, escogimos el selector que deseabam
     <app-prueba></app-prueba>
   </body>
 </html>
-```
+{% endhighlight %}
+
 ## Compilando TypeScript
 Antes de probar nuestro código en el navegador, es necesario compilar nuestro código TypeScript utilizando `tsc` gracias a la configuración que realizamos al inicio.
 
 Abrimos una línea de comandos en la raíz de nuestro proyecto y ejecutamos el siguiente comando.
-```
+
+{% highlight %}
 npm run tsc
-```
+{% endhighlight %}
+
 Si el proceso se completa correctamente, deberíamos obtener el código `.js` respectivo a nuestros archivos `.ts`.
 
 ## Ejecutando la aplicación
@@ -216,9 +230,10 @@ Finalmente es hora de probar nuestra aplicación en el navegador.
 
 En la misma línea de comando escribiremos lo siguiente.
 
-```
+{% highlight %}
 npm start
-```
+{% endhighlight %}
+
 Esto iniciará nuestro `live-server` y nos dará un url donde podremos ver nuestro componente en ejecución.
 
 ## Resultados
