@@ -1,4 +1,5 @@
 ---
+layout: nil
 title : "Sitemap"
 sitemap_exclude: y
 ---
@@ -6,14 +7,14 @@ sitemap_exclude: y
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
     <url>
-        <loc>{{http://sramirez.me}}{{ post.url | remove: 'index.html' }}</loc>
+        <loc>{{site.base}}{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 
     {% for page in site.pages %}
     {% if page.sitemap_exclude != 'y' %}
     <url>
-        <loc>{{http://sramirez.me}}{{ page.url | remove: 'index.html' }}</loc>
+        <loc>{{site.base}}{{ page.url | remove: 'index.html' }}</loc>
     </url>
     {% endif %}
     {% endfor %}
