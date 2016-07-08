@@ -1,0 +1,35 @@
+Requisitos de cada plataforma
+- http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html
+
+Android
+- https://console.developers.google.com/apis/credentials
+Create credentials
+	-help me choose
+	-GCM
+	-Other (non-ui)
+
+Crear un servidor
+https://aws.amazon.com/sdk-for-node-js/
+SNS Mobile
+https://www.npmjs.com/package/sns-mobile
+Tutorial
+http://evanshortiss.com/development/mobile/2014/02/22/sns-push-notifications-using-nodejs.html
+
+Tutorial oficial
+# registrar usuarios
+http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#createPlatformEndpoint-property
+# enviar notificaciones
+http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property
+
+Android
+# instalar Extras > Google Play Services y Google Repository
+
+DEBUGGEAR EN ANDROID
+chrome://inspect/#devices
+
+Para incrementar el Badge en iOS, sólo se necesita agregar la propiedad "badge" en el call de AWS
+{
+"APNS_SANDBOX":"{\"aps\":{\"alert\":\"test\",\"badge\":1}}"
+}
+
+Android : sólo funciona tirandolo como JSON
