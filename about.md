@@ -1,12 +1,9 @@
 ---
-title: About
 layout: page
 ---
 
 ## About this blog
 This website was created with the main main goal of keeping myself up to date with the latest technologies for web development even when they are no longer a part of my day to day. I don't consider myself an expert, but I'm always willing to learn and find in writing a way of pushing myself into more research while developing content which might be useful for other people.
-
-I recently chose to add [multi language](https://www.sylvaindurand.org/making-jekyll-multilingual/) since I was on my way to learn about an upcoming framework and couldn't find many references in my native language, Spanish.
 
 ![Photo](https://lh6.googleusercontent.com/-m32wN5pQw2Q/VhMsTWsKJDI/AAAAAAAALWM/1anmFkVxmNU/s722-no/IMG_0858.JPG){: .center-image .round-image }
 
