@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-    {% include head.html %}
-    <body>
-        <div class="cover">
-            <div class="information-container">
-                <div class="information">
-                    <img src="/images/sebas.jpg" />
-                    {% for translation in site.data.translations[page.lang] %}
-                      <small>{{ translation[1].title }}</small>
-                      <h1>{{site.name}}</h1>
-                      <p>
-                        {{ translation[1].tec }} <a href="http://www.tec.ac.cr/">TEC Costa Rica</a>.<br/>
-                        {{ translation[1].wake }} <a href="http://www.wfu.edu/">Wake Forest University</a>.
-                      </p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <div class="content">
-          {{ content }}
-        </div>
-    </body>
-    {% include footer.html %}
-    {% include analytics.html %}
-</html>
+---
+layout: base
+---
+
+<div class="intro-header"></div>
+
+<div role="main" class="container">
+  {{ content }}
+</div>

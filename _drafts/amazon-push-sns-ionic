@@ -1,19 +1,61 @@
 Requisitos de cada plataforma
 - http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html
 
-Android
+ANDROID
 - https://console.developers.google.com/apis/credentials
+Create app
+Sidebar => API Manager (Habilitar Google Cloud Messaging)
 Create credentials
-	-help me choose
-	-GCM
-	-Other (non-ui)
+	-API Key
+		-Server
+Copiar API Key
 
+IOS
+Obtener certificados
+-https://developer.apple.com/
+-Sidebar > App IDs
+	- nuevo
+	- name: nombre del app
+	- Bundle Id: id del app en config.xml (cambiar a algo único)
+	- App Services: Push notifications
+- Sale en la lista (configurable) > Edit
+	- Push Notifications > Create Certificate...
+	- Seguir pasos en Keychain
+	- Subir el archivo
+	- Download > Instalar
+	- En Keychain, buscar el certificado (Apple Development IOS Push Services: bundleid)
+	- Click derecho > Export .p12
+	If the certificate export does not allow you to choose .p12, double check that you've selected My Certificates in the left menu before selecting your certificate.
+
+Provisioning profile
+- Go to the Apple Developer Center.
+- Select Certificates, Identifiers, & Profiles.
+- Select Provisioning Profiles under the iOS Apps section.
+- Select the + in the top-right of the screen to create a new iOS Provisioning Profile.
+- Select iOS App Development as your profile type, then select Continue.
+- Select the App ID you created in Section 1, then select Continue.
+- Select the iOS development certificate you created on the next screen, then select Continue.
+- You will now be asked which devices will be included in your provisioning profile. Select all of your development devices then hit Continue.
+Choose a descriptive name for the profile, then hit Generate.
+Download the profile from the next screen with the Download button, then install it by double clicking on it (This may open Xcode).
+
+
+AWS SNS
+- Applications
+	- Create Platform application
+	- Android: Pegar API Key
+	- IOS: Subir certificado .p12
+
+
+=================================================
+SERVER
 Crear un servidor
 https://aws.amazon.com/sdk-for-node-js/
 SNS Mobile
 https://www.npmjs.com/package/sns-mobile
 Tutorial
 http://evanshortiss.com/development/mobile/2014/02/22/sns-push-notifications-using-nodejs.html
+
 
 Tutorial oficial
 # registrar usuarios
@@ -23,6 +65,8 @@ http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SNS.html#publish-property
 
 Android
 # instalar Extras > Google Play Services y Google Repository
+
+
 
 DEBUGGEAR EN ANDROID
 chrome://inspect/#devices
