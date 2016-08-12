@@ -59,7 +59,7 @@ share-links-active:
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "sramirez91"
+disqus: sramirez91
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
@@ -69,8 +69,8 @@ disqus: "sramirez91"
 # Output options (more information on Jekyll's site)
 timezone: "America/Costa_Rica"
 markdown: kramdown
-highlighter: pygments
-permalink: /:year-:month-:day-:title/
+highlighter: rouge
+permalink: /:title/
 paginate: 5
 
 kramdown:
@@ -91,7 +91,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      show-avatar: false
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
