@@ -15,14 +15,14 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #008AFF;
+  color: #57ad68;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  color: #57ad68;
 }
 a:hover,
 a:focus {
@@ -97,7 +97,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #2c3e50;
+  background: #292c2f;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -339,14 +339,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: #008AFF;
+  color: #57ad68;
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: #008AFF;
+  color: #57ad68;
   background-color: #CCC;
 }
 
