@@ -31,7 +31,6 @@ avatar: "/img/avatar-icon.png"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Sebastián Ramírez
-  email: "sramirez10r@gmail.com"
   github: s-ramirez
   twitter: s_ramirez
   linkedin: sramirez91
@@ -40,7 +39,7 @@ author:
 footer-links-active:
   rss: false
   facebook: false
-  email: true
+  email: false
   twitter: true
   github: true
   linkedin: true
