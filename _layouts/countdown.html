@@ -15,7 +15,7 @@ body{
 }
 
 h1{
-  color: #396;
+  color: #00816A;
   font-weight: 100;
   font-size: 40px;
   margin: 40px 0px 20px;
@@ -49,23 +49,23 @@ h1{
 	font-size: 16px;
 }
 </style>
-<h1>Countdown Clock</h1>
+<h1>Días para ver a mi guapísima <3</h1>
 <div id="clockdiv">
   <div>
     <span class="days"></span>
-    <div class="smalltext">Days</div>
+    <div class="smalltext">Días</div>
   </div>
   <div>
     <span class="hours"></span>
-    <div class="smalltext">Hours</div>
+    <div class="smalltext">Horas</div>
   </div>
   <div>
     <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
+    <div class="smalltext">Minutos</div>
   </div>
   <div>
     <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
+    <div class="smalltext">Segundos</div>
   </div>
 </div>
 <script>
@@ -109,7 +109,7 @@ function countdown() {
   var timeinterval = setInterval(updateClock, 1000);
   }
 
-  var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+  var deadline = new Date(2016, 11, 04);
   initializeClock('clockdiv', deadline);
 };
 
