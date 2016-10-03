@@ -1,6 +1,6 @@
-#sramirez.me
+#sramirez.xyz
 
-This repository is the source code of my personal website [sramirez.me](http://sramirez.me).
+This repository is the source code of my personal website [sramirez.xyz](http://sramirez.xyz).
 The pages are produced with the static website generator [Jekyll](http://jekyllrb.com/). The website is then hosted and served using [GitHub Pages](https://pages.github.com/).
 
 The source code is freely available on [GitHub](https://github.com/s-ramirez/s-ramirez.github.io).
