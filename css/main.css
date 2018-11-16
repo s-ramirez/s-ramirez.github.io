@@ -5,7 +5,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #404040;
+  color: #2a2f35;
   position: relative;
   background: #FFF;
 }
@@ -15,18 +15,18 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #57ad68;
+  color: #1D78BD;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #57ad68;
+  color: #1D78BD;
 }
 a:hover,
 a:focus {
-  color: #57ad68;
+  color: #1D78BD;
 }
 blockquote {
   color: #808080;
@@ -64,12 +64,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #57ad68;
+  background: #1D78BD;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #57ad68;
+  background: #1D78BD;
 }
 img::selection {
   color: white;
@@ -97,26 +97,31 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #292c2f;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 .navbar-custom .nav li a {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: normal;
-  color: white;
+  font-weight: bold;
+  color: #a6a8ab;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #57ad68;
+  color: #1D78BD;
+}
+
+.navbar-custom .container-fluid {
+  margin: 1.5em auto 2em;
+  width: 43.35em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -296,7 +301,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #57ad68;
+  color: #1D78BD;
 }
 
 .post-preview .post-title {
@@ -338,14 +343,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: #57ad68;
+  color: #1D78BD;
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: #57ad68;
+  color: #1D78BD;
   background-color: #CCC;
 }
 
@@ -528,8 +533,8 @@ footer .theme-by {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #57ad68;
-  border: 1px solid #57ad68;
+  background: #1D78BD;
+  border: 1px solid #1D78BD;
 }
 
 .pager {
